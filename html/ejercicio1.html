@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Formulario #1</title>
+    <style>
+       
+       .name{
+        margin-right: 10px;
+        margin-bottom: 10px;
+        padding: 10px 60px 10px 10px ;
+       }
+
+       .telefono{
+        margin-right: 10px;
+        margin-bottom: 10px;
+        padding: 10px 60px 10px 10px ;
+       }
+
+       .email{
+        margin-right: 10px;
+        margin-bottom: 10px;
+        padding: 10px 60px 10px 10px ;
+       }
+
+       .company{
+        margin-right: 10px;
+        margin-bottom: 10px;
+        padding: 10px 60px 10px 10px  ;
+       }
+
+       .text{
+
+        padding: 10px 250px 0px 10px ;
+        margin-bottom: 30px;
+
+       }
+
+       .submit{
+
+        margin-right: 420px;
+        
+       }
+
+       .boton{
+        
+        border-color: red;
+        color: white;
+        background-color: red;
+        width: 80px;
+        height: 40px;
+
+       }
+
+
+
+
+
+    </style>
+</head>
+<body align="center">
+    <form action="">
+        
+        <div>
+            <div class="flexcontenedor">
+                
+                <input class="name"   type="text" placeholder="NAME" pattern="[a-zA-Z ]{1,60}" maxlength="60" required>
+                <input  class="company"   type="text" placeholder="COMPANY">
+                
+
+            </div>
+
+            <div class="flexcontenedor">
+
+                <input class="telefono" type="number" placeholder="TELEPHONE" pattern="\+\d{2}-\d{3}-\d{7}" required>
+
+                <input  class="email"  type="email" placeholder="EMAIL" maxlength="30" pattern="[a-zA-Z0-9._%+-]+@gmail\.com" required>
+
+            </div>
+            <div>
+
+                <textarea class="text" id="" cols="30" rows="10" placeholder="LEAVE A MESSAGE"></textarea>
+
+            </div>
+            <div class="submit">
+
+                <input class="boton" type="submit" value="SEND"  >
+
+            </div>
+            
+        </div>
+    </form>
+</body>
+</html>
